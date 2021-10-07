@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    display: flex;
+    background-image:  url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px;
+    font-size: 16px;
+    font-family:  'Poppins', sans-serif;  
+}
+.text{
+    display: grid;
+    color: white;
+    
+}
+.offer{ 
+    display: flex;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    border-radius: 8px;
+}
+.free_trial{
+    font-weight: 700;
+}
+h1{
+    font-size: 45px;
+}
+p{
+    font-weight: 500;
+}
+span{
+    font-weight: 400;
+}
+.small{
+    color: hsl(246, 25%, 77%);
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+}
+.red{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+.error-fn{
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+}
+.error-ln{
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+}
+.error-em{
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+}
+.error-pw{
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+}          
+#form{
+    background-color: white;
+    border-radius: 8px;
+    display: grid;
+    margin-top: 20px;
+    padding: 20px;
+}
+input{
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: hsl(246, 25%, 77%);
+}
+#submit{
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 8px;
+    padding: 10px;
+    border-color: transparent;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: hsl(154, 71%, 75%);
+}
+.fp{
+    position: relative;
+    top: -70px;
+}
+.errorimagefn{
+    visibility: hidden;
+}
+.errorimageln{
+    visibility: hidden;
+}
+.errorimageem{
+    visibility: hidden;
+}
+.errorimagepw{
+    visibility: hidden;
+}
+.image_position{
+    
+    text-align: right;
+    position: relative;
+    top: -58px;
+    left: -30px;
+    margin-left: 100%;
+}
+
+@media(max-width:860px) {
+    .text{
+        display: grid;
+        grid-area: title;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .fp{
+        position: relative;
+       top: 0px;
+    }
+    .placing{
+        display: grid;
+        grid-area: form;
+    }
+    .container{
+        align-self: center;
+        display: grid;
+        grid-template-areas: 
+        'title'
+        'form';
+    }
+    .image_position{
+        position: relative;
+        top: -17px;
+    }
+    .offer{
+        padding: 10px;
+    }
+}
